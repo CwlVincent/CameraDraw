@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/open_camera"
+        android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textSize="10dp"
+        android:text="open"/>
+        <Button
+            android:id="@+id/close_camera"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:text="close"/>
+        <Button
+        android:id="@+id/switch_camera"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textSize="10dp"
+        android:layout_height="wrap_content"
+        android:text="switch"/>
+
+        <Button
+            android:id="@+id/add_view"
+            android:layout_weight="1"
+            android:textSize="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="add"/>
+
+        <Button
+            android:id="@+id/remove_view"
+            android:layout_weight="1"
+            android:textSize="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="remove"/>
+
+    </LinearLayout>
+
+    <!--<android.opengl.GLSurfaceView-->
+        <!--android:id="@+id/camera_preview"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--/>-->
+
+    <LinearLayout
+        android:id="@+id/surface_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <SurfaceView
+            android:id="@+id/camera_preview"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+        <android.opengl.GLSurfaceView
+            android:id="@+id/camera_one"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>
